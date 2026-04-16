@@ -53,6 +53,36 @@
             <p><a href="#" class="button">Inscribirme al desafio</a></p>
         </section>
 
+        <section class="panel-gallery">
+            <h2 style="grid-column: 1 / -1; margin: 0 0 0.8rem 0; padding: 0 1rem; font-size: clamp(1.1rem, 3vw, 1.25rem);">Galeria del evento</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=300&h=300&fit=crop" alt="Ronda de clasificacion 1" class="gallery-image">
+                    <p class="gallery-caption">Ronda de clasificacion 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1614613535308-eb5fbd8f2c91?w=300&h=300&fit=crop" alt="Semifinales intensas" class="gallery-image">
+                    <p class="gallery-caption">Semifinales intensas</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1516394775302-766266b4f570?w=300&h=300&fit=crop" alt="Gran final decisiva" class="gallery-image">
+                    <p class="gallery-caption">Gran final decisiva</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551621177-c6e5e9b40fd6?w=300&h=300&fit=crop" alt="Premiacion equipos" class="gallery-image">
+                    <p class="gallery-caption">Premiacion equipos</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?w=300&h=300&fit=crop" alt="Entrega de premios" class="gallery-image">
+                    <p class="gallery-caption">Entrega de premios</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="Foto grupal final" class="gallery-image">
+                    <p class="gallery-caption">Foto grupal final</p>
+                </div>
+            </div>
+        </section>
+
         <section class="panel panel-benefits">
             <h2>Beneficios de participar</h2>
             <ul class="benefits-list">
@@ -102,17 +132,29 @@
                     <p><strong>Cupos:</strong> 120 participantes</p>
                 </div>
                 <form class="signup-form" action="#" method="post">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
 
-                    <label for="correo">Correo</label>
-                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                    </div>
 
-                    <label for="modalidad">Modalidad</label>
-                    <select id="modalidad" name="modalidad">
-                        <option>Individual</option>
-                        <option>Equipo</option>
-                    </select>
+                    <div class="form-group">
+                        <label for="usuario">Usuario gamer</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Tu apodo en juegos" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="modalidad">Modalidad</label>
+                        <select id="modalidad" name="modalidad" required>
+                            <option value="">-- Selecciona una opcion --</option>
+                            <option value="individual">Individual</option>
+                            <option value="equipo">Equipo</option>
+                        </select>
+                    </div>
 
                     <button type="submit" class="button">Enviar inscripcion</button>
                 </form>
